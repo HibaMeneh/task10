@@ -1,0 +1,93 @@
+.header nav {
+    display: flex;
+    gap: 35px;
+    justify-content: space-between;
+}
+.header nav a{
+    color: #0D0E43;
+}
+.search form{
+    display: flex;
+    border: 2px solid #E7E6EF;
+}
+.search input{
+    border: 0;
+    padding: 10px 40px;
+}
+.search button{
+    border: 0;
+    background-color: #FB2E86;
+    padding: 10px;
+}
+.header{
+    padding: 30px 0;/*عشان يضل ماشي مع الكونتينر*/
+}
+/* start footer*/
+.footer-left-side{
+    width: ((100% - 20px)/2);
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+}
+.footer-right-side  nav {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 20px;
+}
+.footer{
+    background-color: #EEEFFB;
+    padding: 30px 0;
+}
+.footer-right-side{
+    display: flex;
+    flex-wrap: wrap;
+    width: ((100% - 20px)/2);
+    flex-wrap: wrap;
+    justify-content: space-around;
+    flex-grow: 1;
+    gap: 20px;/*المسافة بين اولادك*/
+}
+.footer-item{
+    width: calc((100% - 40px)/3);/*40 لانة المسافة بين العنصرين هالقد*/
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    min-width: 200px;
+    gap: 29px;
+}
+.footer-right-side a{
+    color: #8A8FB9;
+}
+.footer .row{
+    align-items: flex-start;
+}
+.email form{
+    display: flex;
+    flex-wrap: wrap;
+    border: 2px solid #ddd;
+}
+.email input{
+    border: 0;
+    padding: 10px 40px;
+}
+.email button{
+    border: 0;
+    padding: 10px;
+    background-color:#FB2E86 ;
+}
+/*end footer*/
+
+@media screen and (max-width:992px){
+    .container{
+        width: calc(100% - 100px);
+    }
+}
+@media screen and (max-width:568px){
+    .container{
+        width:100% ;
+        padding: 0 20px;
+    }
+}
